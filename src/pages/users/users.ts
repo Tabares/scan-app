@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 // import { User } from '../../models/user'
 import {  GithubUsers } from '../../providers/github-users/github-users';
+import { ItemDetailsPage } from '../item-details/item-details';
 
 @Component({
   selector: 'users-ionic',
@@ -22,5 +23,13 @@ export class UsersPage {
   ionViewDidLoad() {
     console.log('Hello Users Page');
     console.log(this.users)
+  }
+
+  itemTapped(event, item) {
+    debugger
+    console.log(item)
+    this.navCtrl.push(ItemDetailsPage, {
+      item: item
+    });
   }
 }

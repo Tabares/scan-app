@@ -8,6 +8,7 @@
 </ion-header>
 
 <ion-content>
+
   <h3 text-center *ngIf="selectedItem">
     {{selectedItem.title}}
     <ion-icon [name]="selectedItem.icon"></ion-icon>
@@ -15,4 +16,18 @@
   <h4 text-center *ngIf="selectedItem">
     You navigated here from <b>{{selectedItem.title}}</b>
   </h4>
+<!--
+  <h3>Profile</h3>
+  <ion-avatar item-left>
+      <img [src]="selectedItem.avatar">
+  </ion-avatar>
+  <h2><span>First Name: </span>{{selectedItem.firstName}}</h2>
+  <h2><span>Last Name: </span>{{selectedItem.lastName}}</h2>
+  <h2><span>address: </span>{{selectedItem.address}}</h2>
+  <h2><span>Phone: </span>{{selectedItem.phone}}</h2>
+
+-->
+
+
+
 </ion-content>
