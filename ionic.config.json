@@ -1,5 +1,6 @@
 {
   "name": "scan-demo",
-  "app_id": "",
-  "type": "ionic-angular"
+  "app_id": "b1d24164",
+  "type": "ionic-angular",
+  "integrations": {}
 }
